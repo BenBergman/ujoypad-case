@@ -113,7 +113,7 @@ module button_plate()
 module buttons()
 {
     button_h = 2;
-    translate([0, 0, 2.75]) union() {
+    translate([0, 0, 2.6]) union() {
         d_pad(x = 0, h = button_h);
         a_button(x = 0, h = button_h);
         b_button(x = 0, h = button_h);
