@@ -33,14 +33,15 @@ module cable_gap()
 
 module case()
 {
+    x = 0.4;
     difference() {
         base();
         cable_gap();
-        translate([0, 0, -1 * extra]) d_pad(x = 0.5, h = 4 + 2 * extra);
-        translate([0, 0, -1 * extra]) a_button(x = 0.5, h = 4 + 2 * extra);
-        translate([0, 0, -1 * extra]) b_button(x = 0.5, h = 4 + 2 * extra);
-        translate([0, 0, -1 * extra]) start_button(x = 0.5, h = 4 + 2 * extra);
-        translate([0, 0, -1 * extra]) select_button(x = 0.5, h = 4 + 2 * extra);
+        translate([0, 0, -1 * extra]) d_pad(x = x, h = 4 + 2 * extra);
+        translate([0, 0, -1 * extra]) a_button(x = x, h = 4 + 2 * extra);
+        translate([0, 0, -1 * extra]) b_button(x = x, h = 4 + 2 * extra);
+        translate([0, 0, -1 * extra]) start_button(x = x, h = 4 + 2 * extra);
+        translate([0, 0, -1 * extra]) select_button(x = x, h = 4 + 2 * extra);
     }
 }
 
